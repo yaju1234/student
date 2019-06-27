@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:background="@color/msg_line"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:background="@color/msg_line"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="54dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/app_icon_r" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/login_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_horizontal"
+                        android:text="Fees Session 2017-2018"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_m1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_resulelight">
+
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/name_value"
+                        android:layout_alignBottom="@+id/name_value"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginStart="14dp"
+                        android:gravity="left"
+                        android:text="Student Name : "
+                        android:textColor="@color/bg_heading"
+                        android:textSize="12sp"
+                        android:textStyle="bold|normal" />
+
+                    <TextView
+                        android:id="@+id/name_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_toEndOf="@+id/name"
+                        android:layout_toRightOf="@+id/name"
+                        android:text="Gaurav Mangal"
+                        android:textColor="@color/bg_heading"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_m2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/bg_resulelight">
+
+                    <TextView
+                        android:id="@+id/class_st"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/class_value"
+                        android:layout_alignBottom="@+id/class_value"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginStart="14dp"
+                        android:gravity="left"
+                        android:text="Class : "
+                        android:textColor="@color/bg_heading"
+                        android:textSize="12sp"
+                        android:textStyle="bold|normal" />
+
+                    <TextView
+                        android:id="@+id/class_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="64dp"
+                        android:layout_toEndOf="@+id/class_st"
+                        android:layout_toRightOf="@+id/class_st"
+                        android:text="8th"
+
+                        android:textColor="@color/bg_heading"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_m_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/bg_resulelight">
+
+                    <TextView
+                        android:id="@+id/section"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/section_value"
+                        android:layout_alignBottom="@+id/section_value"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginStart="14dp"
+                        android:gravity="left"
+                        android:text="Section :"
+                        android:textColor="@color/bg_heading"
+                        android:textSize="12sp"
+                        android:textStyle="bold|normal" />
+
+                    <TextView
+                        android:id="@+id/section_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="56dp"
+                        android:layout_toEndOf="@+id/section"
+                        android:layout_toRightOf="@+id/section"
+                        android:text="B"
+
+                        android:textColor="@color/bg_heading"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_m3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/bg_resulelight">
+
+                    <TextView
+                        android:id="@+id/roll_st"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/rooll_value"
+                        android:layout_alignBottom="@+id/rooll_value"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginStart="14dp"
+                        android:gravity="left"
+                        android:text="Roll No : "
+                        android:textColor="@color/bg_heading"
+                        android:textSize="12sp"
+                        android:textStyle="bold|normal" />
+
+                    <TextView
+                        android:id="@+id/rooll_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="53dp"
+                        android:layout_toEndOf="@+id/roll_st"
+                        android:layout_toRightOf="@+id/roll_st"
+                        android:text="14"
+                        android:textColor="@color/bg_heading"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/bg_resulelight">
+
+                    <TextView
+                        android:id="@+id/fee_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/fee_amount_val"
+                        android:layout_alignBottom="@+id/fee_amount_val"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginStart="14dp"
+                        android:gravity="left"
+                        android:text="Total Fees : "
+                        android:textColor="@color/bg_heading"
+                        android:textSize="12sp"
+                        android:textStyle="bold|normal" />
+
+                    <TextView
+                        android:id="@+id/fee_amount_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="33dp"
+                        android:layout_toEndOf="@+id/fee_amount"
+                        android:layout_toRightOf="@+id/fee_amount"
+                        android:text="25000"
+                        android:textColor="@color/bg_heading"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_feedeposit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/bg_resulelight">
+
+                    <TextView
+                        android:id="@+id/fee_depositamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/fee_amountdeposit_val"
+                        android:layout_alignBottom="@+id/fee_amountdeposit_val"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginStart="14dp"
+                        android:gravity="left"
+                        android:text="Deposit Fees : "
+                        android:textColor="@color/bg_heading"
+                        android:textSize="12sp"
+                        android:textStyle="bold|normal" />
+
+                    <TextView
+                        android:id="@+id/fee_amountdeposit_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="18dp"
+                        android:layout_toEndOf="@+id/fee_depositamount"
+                        android:layout_toRightOf="@+id/fee_depositamount"
+                        android:text="15000"
+                        android:textColor="@color/bg_heading"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_feeremain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/bg_resulelight">
+
+                    <TextView
+                        android:id="@+id/fee_remainamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/fee_amountremain_val"
+                        android:layout_alignBottom="@+id/fee_amountremain_val"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginStart="14dp"
+                        android:gravity="left"
+                        android:text="Remaining Fees : "
+                        android:textColor="@color/bg_heading"
+                        android:textSize="12sp"
+                        android:textStyle="bold|normal" />
+
+                    <TextView
+                        android:id="@+id/fee_amountremain_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toEndOf="@+id/fee_remainamount"
+                        android:layout_toRightOf="@+id/fee_remainamount"
+                        android:text="10000"
+                        android:textColor="@color/bg_heading"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_feedate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/bg_resulelight">
+
+                    <TextView
+                        android:id="@+id/fee_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/fee_adate_val"
+                        android:layout_alignBottom="@+id/fee_adate_val"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginStart="14dp"
+                        android:gravity="left"
+                        android:text="Last Date : "
+                        android:textColor="@color/bg_heading"
+                        android:textSize="12sp"
+                        android:textStyle="bold|normal" />
+
+                    <TextView
+                        android:id="@+id/fee_adate_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="38dp"
+                        android:layout_toEndOf="@+id/fee_date"
+                        android:layout_toRightOf="@+id/fee_date"
+                        android:text="28 Feb 2017"
+                        android:textColor="@color/bg_heading"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</LinearLayout>

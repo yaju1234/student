@@ -1,0 +1,241 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_top_below"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rl_bar"
+        android:layout_marginTop="3dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txt_msgdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Send To *"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/et_sentto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:autoLink="all"
+                android:gravity="top|left"
+                android:hint="Send To "
+                android:inputType="textMultiLine|textCapSentences"
+                android:lines="5"
+                android:maxLines="10"
+                android:minLines="1"
+                android:scrollbars="vertical"
+                android:textColor="@color/msg_ddetails" />
+
+            <TextView
+                android:id="@+id/txt_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Subject *"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/etsubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:autoLink="all"
+                android:gravity="top|left"
+                android:hint="Subject"
+                android:inputType="textMultiLine|textCapSentences"
+                android:lines="5"
+                android:maxLines="10"
+                android:minLines="1"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/txt_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Message *"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etbody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:autoLink="all"
+                android:gravity="top|left"
+                android:hint="Message"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine|textCapSentences"
+                android:lines="5"
+                android:maxLines="10"
+                android:minLines="1"
+                android:scrollbars="vertical" />
+
+
+            <RadioGroup
+                android:id="@+id/radiogroupleave"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_oneday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="One Day" />
+
+                <RadioButton
+                    android:id="@+id/radio_multipleday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Multiple Day" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/from_date"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="0dip"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="12dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimary"
+                    android:drawableLeft="@drawable/calender"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/arrowright"
+                    android:hint="From Date *"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/dot_dark_screen2"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/todate_multiple"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="0dip"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimary"
+                    android:drawableLeft="@drawable/calender"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/arrowright"
+                    android:hint="To Date *"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/dot_dark_screen2"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/todate"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:background="@color/colorPrimary"
+                android:drawableLeft="@drawable/calender"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/arrowright"
+                android:hint="To Date *"
+                android:paddingLeft="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/dot_dark_screen2"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/attchment_btn"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Attchment File"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/senddatabutton"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+
+    <RelativeLayout
+        android:padding="3dp"
+        android:background="@drawable/borderedittext1"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="160dp">
+
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:background="@drawable/shedow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></View>
+
+        <LinearLayout
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight=".7"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:id="@+id/title"
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:layout_weight=".3"
+                android:textColor="@color/white"
+                android:id="@+id/amt"
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

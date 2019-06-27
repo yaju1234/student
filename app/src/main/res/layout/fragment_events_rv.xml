@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_newsdatarv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+  <TextView
+        android:id="@+id/newsdata_not_availabe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/rv_newsdatarv"
+        android:layout_toRightOf="@+id/rv_newsdatarv"
+        android:gravity="center"
+        android:text="No Events available."
+        android:textColor="@color/coor_white_slat"
+        android:textSize="16sp"
+      android:textStyle="bold"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

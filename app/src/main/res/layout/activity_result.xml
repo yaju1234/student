@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.turtle.eschool.ResultActivity">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/score_4"
+        />
+
+    <TextView
+        android:id="@+id/na"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mukesh"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your scored            : "
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:layout_weight="3"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total scored           : "
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:layout_weight="3"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+    </LinearLayout>
+
+
+
+    <!--
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:layout_below="@+id/score"
+            android:layout_centerHorizontal="true"/>
+    -->
+
+</LinearLayout>

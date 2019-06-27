@@ -1,0 +1,39 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:divider="@color/white"
+            android:scrollbars="none"
+            android:id="@+id/list_video"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+<!--
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            android:layout_marginBottom="50dp"
+            android:layout_centerInParent="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="invisible"
+            app:indicatorName="BallScaleMultipleIndicator"
+            app:indicatorColor="@color/colorPrimaryDark"
+            />
+-->
+
+    </RelativeLayout>
+</ScrollView>

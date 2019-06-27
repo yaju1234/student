@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/receiver_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/background_incoming_message"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/receivermessage_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Hello "
+                android:textColor="@color/incoming" />
+
+            <TextView
+                android:id="@+id/receivermsg_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="5dip"
+                android:text=""
+                android:textColor="@color/incoming"
+                android:textSize="8sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sender_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/background_outgoing_message"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/senderrmessage_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text=" Hello"
+                android:textColor="@color/color_bg_tab" />
+
+            <TextView
+                android:id="@+id/sendermsg_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="5dip"
+                android:text=""
+                android:textColor="@color/color_bg_tab"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

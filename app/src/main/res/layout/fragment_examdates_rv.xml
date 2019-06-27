@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/msg_line"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/msg_line"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rl_header_top"
+            android:background="@color/coor_white_slat">
+
+            <Button
+                android:id="@+id/btn_ct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_toLeftOf="@+id/button_divider"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="Class Test"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_active_ct"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/button_divider"
+                android:background="@color/msg_line"></RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/button_divider"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@color/dot_dark_screen1"
+                ></RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_fe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@+id/button_divider"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="Main Exam"
+                android:textAllCaps="false"
+                android:textColor="@color/coor_white_slat"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_active_fe"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/button_divider"
+                android:background="@color/coor_white_slat"></RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:scrollbars="none">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_resultnamedata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/data_not_availabe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/rv_newsdatarv"
+                android:layout_toRightOf="@+id/rv_newsdatarv"
+                android:gravity="center"
+                android:text="No exam class test date available."
+                android:textColor="@color/color_bg_tab"
+                android:textSize="14sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

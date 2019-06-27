@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center_horizontal"
+        android:text="Forgot Password"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rl_forgotpassword"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/login_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+
+
+                <EditText
+                    android:id="@+id/et_mobilenumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="12dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#ffffff"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnskip"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="3sp"
+                    android:layout_weight="0.5"
+                    android:background="#ffffff"
+                    android:text="Skip"
+                    android:textColor="@color/bg"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_forgotpasswordsubmit"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="3sp"
+                    android:layout_weight="0.5"
+                    android:background="#ffffff"
+                    android:text="Submit"
+                    android:textColor="@color/bg"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_otp"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/login_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/otp_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="12dp"
+                    android:drawableTint="#999999"
+                    android:hint="Enter OTP"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <!-- <Button
+                     android:id="@+id/btnskipotp"
+                     android:layout_width="0dip"
+                     android:layout_height="match_parent"
+
+                     android:layout_centerHorizontal="true"
+                     android:layout_margin="3sp"
+                     android:layout_weight="0.5"
+                     android:background="@color/colorPrimary"
+                     android:text="Resend"
+                     android:textColor="@color/white"
+                     android:textSize="12sp" />-->
+
+                <Button
+                    android:id="@+id/btn_otpsubmit"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="3sp"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimary"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/forgot_passwordchage"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/login_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="12dp"
+                    android:drawableTint="#999999"
+                    android:hint="@string/passwordnew"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="10"
+                    android:padding="12dip"
+                    android:singleLine="true" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_passwordcnf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="12dp"
+                    android:drawableTint="#999999"
+                    android:hint="@string/confrmpassword"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="10"
+                    android:padding="12dip"
+                    android:singleLine="true" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:weightSum="1">
+
+
+                <Button
+                    android:id="@+id/btnchgpassword"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="3sp"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimary"
+                    android:text="Change Password"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:title="Feeds">
+            <menu>
+            <item
+                android:id="@+id/id_XX101"
+                android:icon="@drawable/d1"
+                android:title="Dashboard" />
+            <item
+                android:id="@+id/id_XX102"
+                android:icon="@drawable/d2"
+                android:title="News" />
+            <item
+                android:id="@+id/id_XX103"
+                android:icon="@drawable/d3"
+                android:title="Event's" />
+            <item
+                android:id="@+id/id_Vedio"
+                android:icon="@drawable/videoicon"
+                android:title="Video's" />
+            <item
+                android:id="@+id/id_gallery"
+                android:icon="@drawable/galleryicon"
+                android:title="Gallery" />
+            </menu>
+        </item>
+
+        <item android:title="Academyic">
+            <menu>
+            <item
+                android:id="@+id/id_XX1099"
+                android:icon="@drawable/d9"
+                android:title="Home Work" />
+
+            <item
+                android:id="@+id/id_XX10998"
+                android:icon="@drawable/d10"
+                android:title="Time Table" />
+
+            <item
+                android:id="@+id/id_XX108"
+                android:icon="@drawable/d8"
+                android:title="Attendance" />
+
+            <item
+                android:id="@+id/id_XX107"
+                android:icon="@drawable/d7"
+                android:title="Leave Application" />
+
+
+            <item
+                android:id="@+id/id_quiz"
+                android:icon="@drawable/quiz"
+                android:title="Quiz" />
+
+            </menu>
+        </item>
+
+
+        <item android:title="Important Date's">
+            <menu>
+            <item
+                android:id="@+id/id_XX104"
+                android:icon="@drawable/d4"
+                android:title="Holiday's" />
+
+            <item
+                android:id="@+id/id_XX105"
+                android:icon="@drawable/d5"
+                android:title="Exam date's" />
+         <!--   <item
+                android:id="@+id/id_XX106"
+                android:icon="@drawable/d6"
+                android:title="Result's" />-->
+</menu>
+
+        </item>
+
+        <item android:title="My Teacher">
+            <menu>
+            <item
+                android:id="@+id/id_XXX101"
+                android:icon="@drawable/d12"
+                android:title="Know Your Teacher" />
+
+            <item
+                android:id="@+id/id_XX109"
+                android:icon="@drawable/d11"
+                android:title="Have a talk" />
+            </menu>
+        </item>
+
+
+
+    <item android:title="Details">
+        <menu>
+           <!-- <item
+                android:id="@+id/id_XXX102"
+                android:icon="@drawable/d13"
+                android:title="Fees" />-->
+
+            <item
+                android:id="@+id/id_XXY_101"
+                android:icon="@drawable/d14"
+                android:title="Complain" />
+        </menu>
+    </item>
+
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/id_XX1010"
+            android:icon="@drawable/d15"
+            android:title="Logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:id="@+id/form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rl_top_header"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary" >
+
+            <TextView
+                android:id="@+id/t_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ic_back"
+                android:paddingLeft="15dp"
+                android:text="TEACHER_NAME 1"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/color_line_tab"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/t_name_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ic_back"
+                android:paddingLeft="15dp"
+                android:text="LKG"
+                android:layout_below="@+id/t_name"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/color_line_tab"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/ic_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/backarrow" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/chatText"
+            android:divider="@null"
+            android:layout_below="@+id/rl_top_header"
+            android:visibility="gone"></ListView>
+
+        <EditText
+            android:id="@+id/chatText"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/buttonSend"
+            android:ems="10"
+            android:hint="Type your message here..."
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:maxLength="1000"
+            android:paddingLeft="10dp"
+            android:textColor="@color/datecolor" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dp"
+            android:layout_alignTop="@+id/chatText"
+            android:background="@drawable/iconsend"
+            android:gravity="center_vertical"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/chatdata_not_availabe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/rv_newsdatarv"
+        android:layout_toRightOf="@+id/rv_newsdatarv"
+        android:gravity="center"
+        android:text="No chat data available."
+        android:textColor="@color/coor_white_slat"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+</RelativeLayout>
