@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.turtle.eschool">
+    package="com.mdgroup.parents">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -15,7 +15,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".AppController"
+        android:name="com.mdgroup.parents.AppController"
         android:allowBackup="true"
         android:icon="@drawable/app_icon"
         android:label="@string/app_name"
@@ -23,18 +23,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".WelcomeSlider"
+            android:name="com.mdgroup.parents.WelcomeSlider"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".DrawerActivity"
+            android:name="com.mdgroup.parents.DrawerActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SplashScreen"
+            android:name="com.mdgroup.parents.SplashScreen"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme">
@@ -45,43 +45,43 @@
         </intent-filter>
     </activity>
         <activity
-            android:name=".LoginSlider"
+            android:name="com.mdgroup.parents.LoginSlider"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".adptercstm.adpter.chat.StudentResuleManager"
+            android:name="com.mdgroup.parents.adptercstm.adpter.chat.StudentResuleManager"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".EditActivity"
+            android:name="com.mdgroup.parents.EditActivity"
             android:label="Edit Profile"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".adptercstm.adpter.chat.StudentChat"
+            android:name="com.mdgroup.parents.adptercstm.adpter.chat.StudentChat"
             android:label="Chat"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ActivityNewsDatas"
+            android:name="com.mdgroup.parents.ActivityNewsDatas"
             android:label="@string/title_activity_activity_news_datas"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ActivityEventsDatas"
+            android:name="com.mdgroup.parents.ActivityEventsDatas"
             android:label="Event List"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name="com.mdgroup.parents.MainActivity"></activity>
         <activity
-            android:name=".FullImageActivity"
+            android:name="com.mdgroup.parents.FullImageActivity"
             android:label="Full Image"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".ResultActivity"
+            android:name="com.mdgroup.parents.ResultActivity"
             android:label="Result"
             android:theme="@style/AppTheme.NoActionBar" />
 

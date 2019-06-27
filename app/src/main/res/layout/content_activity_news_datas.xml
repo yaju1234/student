@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.turtle.eschool.ActivityNewsDatas"
+    tools:context="com.mdgroup.parents.ActivityNewsDatas"
     tools:showIn="@layout/activity_news_datas">
 
     <LinearLayout

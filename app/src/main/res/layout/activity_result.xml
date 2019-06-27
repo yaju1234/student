@@ -6,7 +6,7 @@
     android:gravity="center"
     android:background="#ffffff"
     android:orientation="vertical"
-    tools:context="com.turtle.eschool.ResultActivity">
+    tools:context="com.mdgroup.parents.ResultActivity">
 
     <ImageView
         android:id="@+id/img1"
