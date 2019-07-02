@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#e23744</color>
     <color name="colorPrimaryDark">#e23744</color>
-    <color name="colorAccent">#F5F4F4</color> <!-- rgb(255,64,129)-->
+    <color name="colorAccent">#646363</color> <!-- rgb(255,64,129)-->
     <color name="coor_white_slat">#999999</color><!--153,153,153) -->
     <color name="white">#ffffff</color>
     <color name="datecolor">#004D40</color>
@@ -31,10 +31,10 @@
     <color name="news_headerfrom">#595959</color>
     <color name="news_gree">#0F0</color>
 
-    <color name="dot_light_screen1">#FDFDFD</color>
-    <color name="dot_light_screen2">#FDFDFD</color>
-    <color name="dot_light_screen3">#FDFDFD</color>
-    <color name="dot_light_screen4">#FDFDFD</color>
+    <color name="dot_light_screen1">#5E5D5D</color>
+    <color name="dot_light_screen2">#5E5D5D</color>
+    <color name="dot_light_screen3">#5E5D5D</color>
+    <color name="dot_light_screen4">#5E5D5D</color>
     <color name="green_present">#6aca30</color> <!-- 106,202,48-->
     <color name="absent">#E2595C</color>
     <color name="leavet">#FBCC33</color>

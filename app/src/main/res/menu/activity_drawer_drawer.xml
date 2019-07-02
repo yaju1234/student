@@ -26,12 +26,12 @@
             </menu>
         </item>
 
-        <item android:title="Academyic">
+        <item android:title="academic">
             <menu>
-            <item
+            <!--<item
                 android:id="@+id/id_XX1099"
                 android:icon="@drawable/d9"
-                android:title="Home Work" />
+                android:title="Home Work" />-->
 
             <item
                 android:id="@+id/id_XX10998"
@@ -53,6 +53,10 @@
                 android:id="@+id/id_quiz"
                 android:icon="@drawable/quiz"
                 android:title="Quiz" />
+                <item
+                    android:id="@+id/id_XXY_101"
+                    android:icon="@drawable/d14"
+                    android:title="Complain" />
 
             </menu>
         </item>
@@ -93,19 +97,7 @@
 
 
 
-    <item android:title="Details">
-        <menu>
-           <!-- <item
-                android:id="@+id/id_XXX102"
-                android:icon="@drawable/d13"
-                android:title="Fees" />-->
 
-            <item
-                android:id="@+id/id_XXY_101"
-                android:icon="@drawable/d14"
-                android:title="Complain" />
-        </menu>
-    </item>
 
     <group
         android:id="@+id/grp2"

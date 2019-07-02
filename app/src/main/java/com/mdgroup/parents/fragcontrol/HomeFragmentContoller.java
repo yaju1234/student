@@ -153,7 +153,7 @@ public class HomeFragmentContoller extends Fragment implements PickerDialog.OnDa
 
         Gson gson = new Gson();
         final ModelUser modelstudent = gson.fromJson(data, ModelUser.class);
-        homework_st_name.setText(modelstudent.getSTUDENT_FULL_NAME());
+        homework_st_name.setText("Hello "+modelstudent.getSTUDENT_FULL_NAME());
         Picasso.with(getContext()).load(modelstudent.getIMAGE()).fit().into(profile_image_url);
         String str_data="Class : "+modelstudent.getCLASSES_NAME().concat(" Section : "+modelstudent.getSECTIONS_NAME());
         homework_st_class.setText(str_data);

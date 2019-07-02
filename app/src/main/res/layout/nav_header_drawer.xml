@@ -3,7 +3,7 @@
     android:id="@+id/clickheader"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
-    android:background="@drawable/blue_background"
+    android:background="#29549c"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -26,13 +26,15 @@
         android:paddingLeft="8dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="Gaurav"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:textColor="#ffffff"
+         />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="8dp"
+        android:textColor="#ffffff"
         android:text="Class : 8th Section : B \nRoll No : 14" />
 
 </LinearLayout>

@@ -50,8 +50,9 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
         setContentView(R.layout.activity_drawer);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setElevation(0.0f);
+       // getSupportActionBar().setElevation(0);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setElevation(0);
+
 
         prefManager = new PrefManager(DrawerActivity.this);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -184,10 +185,10 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
         }else if (id == R.id.id_XX108) {
             setTitle("Attendance");
             switchFragment(new FragmentSchool_Attendacne());
-        }else if (id == R.id.id_XX1099) {
+        }/*else if (id == R.id.id_XX1099) {
             setTitle("Homework");
             switchFragment(new FragmentSchool_Homework());
-        }else if (id == R.id.id_XX10998) {
+        }*/else if (id == R.id.id_XX10998) {
             setTitle("Time Table");
             switchFragment(new FragmentSchool_Timetable());
         }else if (id == R.id.id_XXX101) {

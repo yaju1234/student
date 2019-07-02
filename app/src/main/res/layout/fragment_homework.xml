@@ -24,7 +24,7 @@
                 <LinearLayout
                     android:id="@+id/ll_stinfo"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="120dp"
                     android:background="@color/colorPrimaryDark"
                     android:orientation="vertical"
                     android:visibility="visible">
@@ -36,6 +36,14 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:text="Kamla Mehta"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Have a nice day..!"
                         android:textColor="@color/white"
                         android:textSize="18sp" />
 

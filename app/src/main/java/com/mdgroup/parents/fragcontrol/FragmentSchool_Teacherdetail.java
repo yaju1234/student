@@ -95,7 +95,7 @@ public class FragmentSchool_Teacherdetail extends Fragment {
                         .into(image1);
             }
         }
-
+        getActivity().setTitle(name);
         teacher_name.setText(name);
         teacher_qualification.setText(qualification);
         teacher_email.setText(emaildata);

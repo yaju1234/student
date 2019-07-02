@@ -12,6 +12,9 @@ import android.widget.TextView;
 import com.mdgroup.parents.R;
 import com.mdgroup.parents.schoolmodel.ModelTimeTable;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -66,6 +69,16 @@ public class AdapterTimeTable extends RecyclerView.Adapter<AdapterTimeTable.Your
         yourRecyclerViewHolder.room_no.setText(album.getROOM_NO());
 
 
+        if(album.getTIME_TABLE_PERIOD_START_TIME().toLowerCase().contains("am") || album.getTIME_TABLE_PERIOD_START_TIME().toLowerCase().contains("am")){
+           String tf =   timeDiff1(album.getTIME_TABLE_PERIOD_START_TIME() , album.getTIME_TABLE_PERIOD_END_TIME());
+           yourRecyclerViewHolder.diff.setText(tf+"min");
+
+        }else{
+            String tf =   timeDiff(album.getTIME_TABLE_PERIOD_START_TIME() , album.getTIME_TABLE_PERIOD_END_TIME());
+            yourRecyclerViewHolder.diff.setText(tf+"min");
+        }
+
+
 
 
 
@@ -79,7 +92,7 @@ public class AdapterTimeTable extends RecyclerView.Adapter<AdapterTimeTable.Your
 
 
     static class YourRecyclerViewHolder extends RecyclerView.ViewHolder {
-    TextView time,period,subject,teacher_name,room_no;
+    TextView time,period,subject,teacher_name,room_no,diff;
 
         public YourRecyclerViewHolder(View itemView)
         {
@@ -90,6 +103,7 @@ public class AdapterTimeTable extends RecyclerView.Adapter<AdapterTimeTable.Your
             subject=(TextView)itemView.findViewById(R.id.timetable_subject);
             teacher_name=(TextView)itemView.findViewById(R.id.teacher_name);
             room_no=(TextView)itemView.findViewById(R.id.room_no);
+            diff=(TextView)itemView.findViewById(R.id.diff);
 
         }
     }
@@ -113,4 +127,74 @@ public class AdapterTimeTable extends RecyclerView.Adapter<AdapterTimeTable.Your
     public void registerAdapterDataObserver(RecyclerView.AdapterDataObserver observer) {
         super.registerAdapterDataObserver(observer);
     }
+
+
+
+
+    public String timeDiff(String dateStart,String dateStop){
+
+        //HH converts hour in 24 hours format (0-23), day calculation
+        SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
+
+        Date d1 = null;
+        Date d2 = null;
+
+        try {
+            d1 = format.parse(dateStart);
+            d2 = format.parse(dateStop);
+
+            //in milliseconds
+            long diff = d2.getTime() - d1.getTime();
+
+            long diffSeconds = diff / 1000 % 60;
+            long diffMinutes = diff / (60 * 1000) % 60;
+            long diffHours = diff / (60 * 60 * 1000) % 24;
+            long diffDays = diff / (24 * 60 * 60 * 1000);
+
+            System.out.print(diffDays + " days, ");
+            System.out.print(diffHours + " hours, ");
+            System.out.print(diffMinutes + " minutes, ");
+            System.out.print(diffSeconds + " seconds.");
+            return ""+diffMinutes;
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return "0";
+    }
+
+
+
+    public String timeDiff1(String dateStart,String dateStop){
+
+        //HH converts hour in 24 hours format (0-23), day calculation
+        SimpleDateFormat format = new SimpleDateFormat("HH:mm a");
+
+        Date d1 = null;
+        Date d2 = null;
+
+        try {
+            d1 = format.parse(dateStart);
+            d2 = format.parse(dateStop);
+
+            //in milliseconds
+            long diff = d2.getTime() - d1.getTime();
+
+            long diffSeconds = diff / 1000 % 60;
+            long diffMinutes = diff / (60 * 1000) % 60;
+            long diffHours = diff / (60 * 60 * 1000) % 24;
+            long diffDays = diff / (24 * 60 * 60 * 1000);
+
+            System.out.print(diffDays + " days, ");
+            System.out.print(diffHours + " hours, ");
+            System.out.print(diffMinutes + " minutes, ");
+            System.out.print(diffSeconds + " seconds.");
+            return ""+diffMinutes;
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return "0";
+    }
+
+
+
 }

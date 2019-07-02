@@ -40,19 +40,34 @@
                 android:id="@+id/et_sentto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textCapSentences"
+                android:maxLines="10"
+
+
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="3dp"
                 android:autoLink="all"
-                android:gravity="top|left"
+
                 android:hint="Send To "
-                android:inputType="textMultiLine|textCapSentences"
+
                 android:lines="5"
-                android:maxLines="10"
+
                 android:minLines="1"
                 android:scrollbars="vertical"
-                android:textColor="@color/msg_ddetails" />
+                />
+
+<!--
+            <EditText
+                android:id="@+id/et_sentto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textCapSentences"
+                android:maxLines="10"
+                android:hint="Send To "
+
+/>-->
 
             <TextView
                 android:id="@+id/txt_subject"
@@ -80,7 +95,7 @@
                 android:lines="5"
                 android:maxLines="10"
                 android:minLines="1"
-                android:scrollbars="vertical" />
+                 />
 
             <TextView
                 android:id="@+id/txt_body"
@@ -108,7 +123,7 @@
                 android:lines="5"
                 android:maxLines="10"
                 android:minLines="1"
-                android:scrollbars="vertical" />
+                />
 
 
             <RadioGroup

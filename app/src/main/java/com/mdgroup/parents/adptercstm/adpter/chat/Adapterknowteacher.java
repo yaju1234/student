@@ -103,7 +103,7 @@ public class Adapterknowteacher extends RecyclerView.Adapter<Adapterknowteacher.
                 bundle.putString("image",album.getTEACHERS_FILE_PATH());
                 bundle.putString("email",album.getTEACHERS_EMAIL());
                 fragInfo.setArguments(bundle);
-                activity.getSupportFragmentManager().popBackStackImmediate();
+                //activity.getSupportFragmentManager().popBackStackImmediate();
                 activity.getSupportFragmentManager().beginTransaction().replace(R.id.mainFrame, fragInfo).addToBackStack(null).commit();
             }
         });

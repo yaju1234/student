@@ -79,15 +79,17 @@
             android:text="Hindi"
             android:textSize="16sp"
             android:textColor="@color/dot_light_screen1"/>
+
         <TextView
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="5dp"
-            android:layout_alignParentRight="true"
+            android:id="@+id/diff"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
             android:text="60 min"
-            android:textSize="14sp"
-            android:textColor="@color/news_row"/>
+            android:textColor="@color/news_row"
+            android:textSize="14sp" />
     </RelativeLayout>
     <LinearLayout
        android:orientation="vertical"
