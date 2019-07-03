@@ -47,7 +47,7 @@ public class FragmentSchool_Timetable extends Fragment {
     String select;
     TextView weekday,timetabledata_not_availabe;
     int i = 0;
-    int c;
+    int c=0;
     PrefManager prefManager;
     int length;
     RecyclerView timetable_list;
@@ -120,12 +120,27 @@ public class FragmentSchool_Timetable extends Fragment {
         timetable = (Button) view.findViewById(R.id.btn_timetabledateselection);
         timetable1 = (Button) view.findViewById(R.id.btn_timetabledateselection1);
         timetable_list = (RecyclerView) view.findViewById(R.id.timetable_list);
+        for(int i1=0; i1<week.length;i1++){
+            if(dayOfTheWeek.toLowerCase().equalsIgnoreCase(week[i1].toLowerCase())){
+                day = week[i1];
+                c = i1+1;
+            }
+        }
         gettimetableshow(modelstudent.getClass_id(),section_id,day);
+
+
+
 
 
         timetable.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                System.out.println("!!!!  ###"+c);
+               /* if(c<=5){
+                    gettimetableshow(modelstudent.getClass_id(),section_id,week[c]);
+                    c = c+1;
+                }
+*/
                 i = c;
                 if (i <= 5) {
                     String a = week[i];
@@ -143,6 +158,12 @@ public class FragmentSchool_Timetable extends Fragment {
         timetable1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+               /* System.out.println("!!!!  EEEE"+c);
+                if(c>=1){
+                    gettimetableshow(modelstudent.getClass_id(),section_id,week[c]);
+                    c = c-1;
+                }*/
+
                 i = c;
                 i = i - 1;
                 if (i == -1) {

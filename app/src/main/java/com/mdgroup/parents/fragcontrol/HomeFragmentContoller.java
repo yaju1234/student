@@ -120,7 +120,7 @@ public class HomeFragmentContoller extends Fragment implements PickerDialog.OnDa
                 if (event.getAction() == KeyEvent.ACTION_DOWN) {
                     if (keyCode == KeyEvent.KEYCODE_BACK) {
                         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-                        builder.setMessage("Are you sure you want to exit?");
+                        builder.setMessage("Are you sure, you want to exit?");
                         builder.setNegativeButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {

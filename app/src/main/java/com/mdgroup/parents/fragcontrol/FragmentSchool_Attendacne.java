@@ -177,7 +177,10 @@ public class FragmentSchool_Attendacne extends Fragment implements View.OnClickL
             caldroidFragment.setMaxDate(cal.getTime()); //last day of current month*/
         }
         //setCustomResourceForDates();
-        getAttendancefromserverMonthData("March", prefManager.getCheckUser_id());
+        SimpleDateFormat sdf = new SimpleDateFormat("MMMM");
+        Date d = new Date();
+        String dayOfTheWeek = sdf.format(d);
+        getAttendancefromserverMonthData(dayOfTheWeek, prefManager.getCheckUser_id());
         Log.d("iser_id",prefManager.getCheckUser_id());
         FragmentTransaction t = getActivity().getSupportFragmentManager().beginTransaction();
         t.replace(R.id.calendar1, caldroidFragment);
