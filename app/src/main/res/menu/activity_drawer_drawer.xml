@@ -14,11 +14,11 @@
             <item
                 android:id="@+id/id_XX103"
                 android:icon="@drawable/d3"
-                android:title="Event's" />
+                android:title="Events" />
             <item
                 android:id="@+id/id_Vedio"
                 android:icon="@drawable/videoicon"
-                android:title="Video's" />
+                android:title="Videos" />
             <item
                 android:id="@+id/id_gallery"
                 android:icon="@drawable/galleryicon"
@@ -26,7 +26,7 @@
             </menu>
         </item>
 
-        <item android:title="academic">
+        <item android:title="Academic">
             <menu>
             <!--<item
                 android:id="@+id/id_XX1099"
@@ -67,12 +67,12 @@
             <item
                 android:id="@+id/id_XX104"
                 android:icon="@drawable/d4"
-                android:title="Holiday's" />
+                android:title="Holidays" />
 
             <item
                 android:id="@+id/id_XX105"
                 android:icon="@drawable/d5"
-                android:title="Exam date's" />
+                android:title="Exam dates" />
          <!--   <item
                 android:id="@+id/id_XX106"
                 android:icon="@drawable/d6"

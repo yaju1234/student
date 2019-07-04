@@ -1,110 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:visibility="visible">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:visibility="visible">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-        <ScrollView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/ll_stinfo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="180dp"
+                android:background="#D13D48"
                 android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/homework_st_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Hello Kamla Mehta"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Have a nice day..!"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/homework_st_class"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Class 8th(section-B)"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="#e23744"
+                    android:layout_height="match_parent"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/homework_st_rollno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Roll no- 114"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_stinfo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginRight="10dp"
+                android:background="#EEEDED"
+               android:orientation="vertical"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardElevation="5dp"
+
                 >
 
                 <LinearLayout
-                    android:id="@+id/ll_stinfo"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:background="@color/colorPrimaryDark"
-                    android:orientation="vertical"
-                    android:visibility="visible">
-
-                    <TextView
-                        android:id="@+id/homework_st_name"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:text="Kamla Mehta"
-                        android:textColor="@color/white"
-                        android:textSize="18sp" />
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:text="Have a nice day..!"
-                        android:textColor="@color/white"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:id="@+id/homework_st_class"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="5dp"
-                        android:text="Class 8th(section-B)"
-                        android:textColor="@color/white"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/homework_st_rollno"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="5dp"
-                        android:text="Roll no- 114"
-                        android:visibility="gone"
-                        android:textColor="@color/white"
-
-                        android:textSize="16sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <RelativeLayout
                         android:id="@+id/choosedate"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:background="@color/colorPrimary">
+                        android:layout_height="60dp">
 
-                        <TextView
-                            android:id="@+id/homework_date"
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="180dp"
                             android:layout_height="wrap_content"
+                            android:gravity="center"
                             android:layout_centerInParent="true"
-                            android:text="Choose date here"
-                            android:textColor="@color/white"
-                            android:textSize="18sp" />
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/to_date"
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:layout_height="wrap_content"
+
+                                android:text="Today's Homework"
+                                android:textColor="#E90F43"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/homework_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Choose date here"
+                                android:textColor="#E90F43"
+                                android:textSize="18sp" />
+                        </LinearLayout>
 
                         <Button
                             android:id="@+id/increment_date"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
+                            android:layout_width="40dp"
+                            android:layout_height="80dp"
                             android:layout_alignParentRight="true"
                             android:layout_marginTop="10dp"
-                            android:background="@drawable/right_arrow" />
+                            android:background="@drawable/ic_chevron_right_black_24dp" />
 
                         <Button
                             android:id="@+id/decrement_date"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
+                            android:layout_width="40dp"
+                            android:layout_height="80dp"
                             android:layout_alignParentLeft="true"
                             android:layout_marginTop="10dp"
-                            android:background="@drawable/left_arrow" />
+                            android:background="@drawable/ic_chevron_left_black_24dp" />
 
 
                     </RelativeLayout>
@@ -113,13 +146,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="HOMEWORK"
+                            android:text="Homework"
                             android:textColor="@color/colorPrimary"
                             android:textSize="16sp" />
 
@@ -127,7 +161,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text="Assigned on"
+                            android:text="assigned on"
                             android:textColor="@color/news_body"
                             android:textSize="16sp"
                             android:textStyle="italic" />
@@ -147,27 +181,33 @@
                     <android.support.v7.widget.RecyclerView
                         android:id="@+id/homework_subject_list"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_height="match_parent"
                         android:layout_marginTop="25dp">
 
                     </android.support.v7.widget.RecyclerView>
+                    <TextView
+                        android:id="@+id/homeworkdata_not_availabe"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:layout_marginTop="120dp"
+                        android:text="No Homework Assigned."
+                        android:textColor="@color/coor_white_slat"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
                 </LinearLayout>
-            </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
+            </android.support.v7.widget.CardView>
 
-    <TextView
-        android:id="@+id/homeworkdata_not_availabe"
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:gravity="center"
-        android:text="Homework details not available."
-        android:textColor="@color/coor_white_slat"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:visibility="invisible" />
+        </RelativeLayout>
+    </ScrollView>
 
-</RelativeLayout>
+
+</LinearLayout>
+
+
+

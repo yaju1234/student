@@ -23,7 +23,7 @@
             <Button
                 android:id="@+id/btn_ct"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="46dp"
                 android:layout_marginBottom="2dp"
                 android:layout_toLeftOf="@+id/button_divider"
                 android:background="@color/colorPrimary"
@@ -31,12 +31,12 @@
                 android:text="Class Test"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="13sp" />
+                android:textSize="16sp" />
 
             <RelativeLayout
                 android:id="@+id/rl_active_ct"
                 android:layout_width="match_parent"
-                android:layout_height="3dp"
+                android:layout_height="20dp"
                 android:layout_alignParentBottom="true"
                 android:layout_toLeftOf="@+id/button_divider"
                 android:background="@color/msg_line"></RelativeLayout>
@@ -52,7 +52,7 @@
             <Button
                 android:id="@+id/btn_fe"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="46dp"
                 android:layout_marginBottom="2dp"
                 android:layout_toRightOf="@+id/button_divider"
                 android:background="@color/colorPrimary"
@@ -60,15 +60,15 @@
                 android:text="Main Exam"
                 android:textAllCaps="false"
                 android:textColor="@color/coor_white_slat"
-                android:textSize="13sp" />
+                android:textSize="16sp" />
 
             <RelativeLayout
                 android:id="@+id/rl_active_fe"
                 android:layout_width="match_parent"
-                android:layout_height="3dp"
+                android:layout_height="6dp"
                 android:layout_alignParentBottom="true"
                 android:layout_toRightOf="@+id/button_divider"
-                android:background="@color/coor_white_slat"></RelativeLayout>
+                android:background="@color/colorPrimary"></RelativeLayout>
         </RelativeLayout>
 
         <RelativeLayout

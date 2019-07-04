@@ -89,7 +89,7 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
         Gson gson = new Gson();
         ModelUser modelstudent = gson.fromJson(data, ModelUser.class);
         tv_headerScreenname.setText(modelstudent.getSTUDENT_FULL_NAME());
-        String str_data="Class : "+modelstudent.getCLASSES_NAME().concat(" Section : "+modelstudent.getSECTIONS_NAME());
+        String str_data="Class : "+modelstudent.getCLASSES_NAME().concat("("+modelstudent.getSECTIONS_NAME()+")");
         tv_headerScreendetails.setText(str_data);
         Picasso.with(getApplicationContext()).load(modelstudent.getIMAGE()).fit().into(image);
         switchFragment(new HomeFragmentContoller());

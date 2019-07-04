@@ -174,28 +174,23 @@ public class FragmentExamDates extends Fragment implements View.OnClickListener 
         btn_ct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                rl_active_ct.setBackgroundColor(Color.rgb(255,215,110));
-                rl_active_fe.setBackgroundColor(Color.rgb(153, 153, 153));
-                btn_ct.setTextColor(Color.rgb(255,255,255));
-                btn_fe.setTextColor(Color.rgb(153,153,153));
-                // rl_main.setVisibility(View.VISIBLE);
-                // rl_main_ct.setVisibility(View.GONE);
-                //login_title.setText("Exam Name : Final Exam");
+                rl_active_ct.setBackgroundColor(getResources().getColor(R.color.msg_line));
+                rl_active_fe.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                btn_ct.setTextColor(getResources().getColor(R.color.white));
+                btn_fe.setTextColor(getResources().getColor(R.color.coor_white_slat));
+
                 getdataREsultMAtch("1",1);
             }
         });
         btn_fe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                rl_active_ct.setBackgroundColor(Color.rgb(153, 153, 153));
-                rl_active_fe.setBackgroundColor(Color.rgb(255,215,110));
+                rl_active_ct.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                rl_active_fe.setBackgroundColor(getResources().getColor(R.color.msg_line));
 
-                btn_ct.setTextColor(Color.rgb(153,153,153));
-                btn_fe.setTextColor(Color.rgb(255,255,255));
-                //rl_main.setVisibility(View.GONE);
-                //rl_main_ct.setVisibility(View.VISIBLE);
-                //login_title.setText("Exam Name : Class Test");
-               // getdataREsultMAtchMainExam("2",2);
+                btn_ct.setTextColor(getResources().getColor(R.color.coor_white_slat));
+                btn_fe.setTextColor(getResources().getColor(R.color.white));
+
                 getdataMainExamgetexamtype();
             }
         });

@@ -4,6 +4,7 @@ package com.mdgroup.parents.fragcontrol;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -115,7 +116,7 @@ public class FragmentSchool_Attendacne extends Fragment implements View.OnClickL
             cal.set(Calendar.MONTH, month - 1);
             cal.set(Calendar.YEAR, year);
             green_presentDate = cal.getTime();
-            ColorDrawable leave_H = new ColorDrawable(getResources().getColor(R.color.colorPrimary));
+            ColorDrawable leave_H = new ColorDrawable(getResources().getColor(R.color.blue_selector));
             caldroidFragment.setBackgroundDrawableForDate(leave_H, green_presentDate);
         }
 
@@ -140,6 +141,7 @@ public class FragmentSchool_Attendacne extends Fragment implements View.OnClickL
     @Override
     public void onCreate(Bundle savedInstanceState) {
         caldroidFragment = new CaldroidFragment();
+       // caldroidFragment.getLeftArrowButton().setBackgroundColor(Color.RED);
         super.onCreate(savedInstanceState);
     }
 
@@ -162,6 +164,7 @@ public class FragmentSchool_Attendacne extends Fragment implements View.OnClickL
         // If activity is created from fresh
         else {
             Bundle args = new Bundle();
+            args.putInt(CaldroidFragment.THEME_RESOURCE, com.caldroid.R.style.CaldroidDefaultDark);
             Calendar cal = Calendar.getInstance();
             args.putInt(CaldroidFragment.MONTH, cal.get(Calendar.MONTH) + 1);
             args.putInt(CaldroidFragment.YEAR, cal.get(Calendar.YEAR));
@@ -176,6 +179,8 @@ public class FragmentSchool_Attendacne extends Fragment implements View.OnClickL
             cal.set(Calendar.DAY_OF_MONTH, maxDay);
             caldroidFragment.setMaxDate(cal.getTime()); //last day of current month*/
         }
+
+
         //setCustomResourceForDates();
         SimpleDateFormat sdf = new SimpleDateFormat("MMMM");
         Date d = new Date();
@@ -214,7 +219,6 @@ public class FragmentSchool_Attendacne extends Fragment implements View.OnClickL
         };
 
         caldroidFragment.setCaldroidListener(listener);
-
 
         return view;
     }

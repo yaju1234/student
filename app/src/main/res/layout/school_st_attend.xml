@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg">
+    android:background="#ffffff">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:orientation="vertical">
 
         <LinearLayout
@@ -16,117 +17,118 @@
             android:orientation="vertical">
 
         </LinearLayout>
+    </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/button_layout"
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/button_layout"
+        android:layout_marginBottom="15dp"
+        android:background="#E93981" />
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_gravity="center|center_horizontal"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/rectangle_at_the_top"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:background="@color/green_present"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:layout_gravity="center|center_horizontal"
-            android:orientation="horizontal">
+            android:layout_margin="8dp"
+            android:text="Present"
+            android:textColor="@color/green_present" />
 
-            <View
-                android:id="@+id/rectangle_at_the_top"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_alignParentTop="true"
-                android:layout_margin="10dp"
-                android:background="@color/green_present"
-                android:visibility="visible" />
+        <View
+            android:id="@+id/rectangle_at_the_top1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:background="@color/absent"
+            android:visibility="visible" />
 
-            <TextView
-                android:id="@+id/textview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:text="Present"
-                android:textColor="@color/green_present" />
-
-            <View
-                android:id="@+id/rectangle_at_the_top1"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_alignParentTop="true"
-                android:layout_margin="10dp"
-                android:background="@color/absent"
-                android:visibility="visible" />
-
-            <TextView
-                android:id="@+id/textview1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Absent"
-                android:textColor="@color/absent" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/button_layout3"
+        <TextView
+            android:id="@+id/textview1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:layout_gravity="center|center_horizontal"
-            android:orientation="horizontal">
-
-            <View
-                android:id="@+id/rectangle_at_the_top3"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_alignParentTop="true"
-                android:layout_margin="10dp"
-                android:background="@color/leavet"
-                android:visibility="visible" />
-
-            <TextView
-                android:id="@+id/textview3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:text=" Leave  "
-                android:textColor="@color/leavet" />
-
-            <View
-                android:id="@+id/rectangle_at_the_to4"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_alignParentTop="true"
-                android:layout_margin="10dp"
-                android:background="@color/colorPrimary"
-                android:visibility="visible" />
-
-            <TextView
-                android:id="@+id/textview4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Holiday"
-                android:textColor="@color/colorPrimary" />
+            android:layout_margin="8dp"
+            android:text="Absent"
+            android:textColor="@color/absent" />
 
 
-        </LinearLayout>
+        <View
+            android:id="@+id/rectangle_at_the_top3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:background="@color/leavet"
+            android:visibility="visible" />
 
-        <LinearLayout
-            android:id="@+id/button_layout4"
+        <TextView
+            android:id="@+id/textview3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center|center_horizontal"
-            android:orientation="horizontal"
-            android:visibility="gone">
+            android:layout_margin="8dp"
+            android:text=" Leave  "
+            android:textColor="@color/leavet" />
 
-            <TextView
-                android:id="@+id/no_attendance"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginTop="10dp"
-                android:text="*Please check on next and previous for load attendance on daily mark."
-                android:textColor="@color/colorPrimary"
-                android:textSize="14sp"
-                android:visibility="visible" />
+        <View
+            android:id="@+id/rectangle_at_the_to4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:background="@color/blue_selector"
+            android:visibility="visible" />
 
-        </LinearLayout>
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Holiday"
+            android:textColor="@color/blue_selector" />
+
 
     </LinearLayout>
-</ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/button_layout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/no_attendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:text="*Please check on next and previous for load attendance on daily mark."
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

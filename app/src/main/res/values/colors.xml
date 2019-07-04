@@ -3,7 +3,7 @@
     <color name="colorPrimary">#e23744</color>
     <color name="colorPrimaryDark">#e23744</color>
     <color name="colorAccent">#646363</color> <!-- rgb(255,64,129)-->
-    <color name="coor_white_slat">#999999</color><!--153,153,153) -->
+    <color name="coor_white_slat">#444343</color><!--153,153,153) -->
     <color name="white">#ffffff</color>
     <color name="datecolor">#004D40</color>
     <color name="msg_ddetails">#616161</color>
@@ -11,7 +11,7 @@
     <color name="outgoing">#FFEBCCFF</color>
 
 
-    <color name="msg_line">#FFD76E</color><!-- rgb(255,215,110)-->
+    <color name="msg_line">#E6C635</color><!-- rgb(255,215,110)-->
     <color name="color_bg_tab">#015E54</color> <!-- 1,94,84-->
     <color name="color_line_tab">#FAFFFE</color>  <!-- rgb(250,255,254)-->
 

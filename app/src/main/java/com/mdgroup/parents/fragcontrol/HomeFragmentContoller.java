@@ -63,7 +63,7 @@ public class HomeFragmentContoller extends Fragment implements PickerDialog.OnDa
     DatePickerDialog datePickerDialog;
     Calendar c = Calendar.getInstance();
     RecyclerView subject_list;
-    TextView homework_date,homework_st_name,homework_st_class;
+    TextView homework_date,homework_st_name,homework_st_class,to_date;
     AdapterHomeworkSubject adapterHomeworkSubject;
     private List<ModelHomework> albumList;
     ModelUser modelstudent;
@@ -85,6 +85,7 @@ public class HomeFragmentContoller extends Fragment implements PickerDialog.OnDa
     RecyclerView.LayoutManager mLayoutManager;
     TextView holidaydata_not_availabe;
     Button btn_holidaydateselection;
+    private String ddtoday="";
 
     public HomeFragmentContoller() {
         // Required empty public constructor
@@ -107,6 +108,7 @@ public class HomeFragmentContoller extends Fragment implements PickerDialog.OnDa
         View view = inflater.inflate(R.layout.fragment_dash, container, false);;
 
         homework_date=(TextView)view.findViewById(R.id.homework_date);
+        to_date=(TextView)view.findViewById(R.id.to_date);
         homework_date2=(TextView)view.findViewById(R.id.homework_date1);
         homework_st_name=(TextView)view.findViewById(R.id.homework_st_name);
         homework_st_class=(TextView)view.findViewById(R.id.homework_st_class);
@@ -210,6 +212,7 @@ public class HomeFragmentContoller extends Fragment implements PickerDialog.OnDa
         System.out.println("Call now :"+check);
         date_self = UtilityFunction.dateConvert(check);
         homework_date.setText(date_self);
+        ddtoday = date_self;
         homework_date2.setText(date_self);
         increment.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -225,6 +228,11 @@ public class HomeFragmentContoller extends Fragment implements PickerDialog.OnDa
                 date_self = UtilityFunction.dateConvert(dt1);
                 homework_date.setText(date_self);
                 homework_date2.setText(date_self);
+                if(ddtoday.equalsIgnoreCase(date_self)){
+                    to_date.setVisibility(View.VISIBLE);
+                }else{
+                    to_date.setVisibility(View.GONE);
+                }
                 getExaminationdateshown(modelstudent.getClass_id(),section_id,UtilityFunction.dateConvertUpdates(dt1));
 
             }
@@ -244,6 +252,11 @@ public class HomeFragmentContoller extends Fragment implements PickerDialog.OnDa
                 homework_date2.setText(date_self);
                 homework_date.setText(date_self);
                 System.out.println("Call now  decre:"+ UtilityFunction.dateConvertUpdates(dt1));
+                if(ddtoday.equalsIgnoreCase(date_self)){
+                    to_date.setVisibility(View.VISIBLE);
+                }else{
+                    to_date.setVisibility(View.GONE);
+                }
                 getExaminationdateshown(modelstudent.getClass_id(),section_id,UtilityFunction.dateConvertUpdates(dt1));
 
             }

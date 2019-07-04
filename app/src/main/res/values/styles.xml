@@ -28,4 +28,24 @@
     </style>
 
 
+    <!-- Dark theme. -->
+    <style name="CaldroidDefaultDark" parent="CaldroidDefault">
+        <item name="styleCaldroidLeftArrow">@style/CaldroidDefaultLeftButton</item>
+        <item name="styleCaldroidRightArrow">@style/CaldroidDefaultRightButton</item>
+    </style>
+
+    <style name="CaldroidDefaultArrowButton">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="CaldroidDefaultLeftButton" parent="CaldroidDefaultArrowButton">
+        <item name="android:background">@drawable/ic_chevron_left_black_24dp</item>
+    </style>
+
+    <style name="CaldroidDefaultRightButton" parent="CaldroidDefaultArrowButton">
+        <item name="android:background">@drawable/ic_chevron_right_black_24dp</item>
+    </style>
+
+
 </resources>

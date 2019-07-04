@@ -23,16 +23,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="440dp"
                 android:layout_below="@+id/rl_top_bar_header"
-                android:layout_marginBottom="3dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp">
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="440dp"
-                    android:layout_margin="2dp"
-                    android:background="@color/white"
+                   android:background="@color/white"
                     android:weightSum="1"
                     android:orientation="vertical">
 
@@ -45,7 +41,7 @@
             <RelativeLayout
                 android:id="@+id/rl_top_bar_header"
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="0dp"
                 android:gravity="center_horizontal">
 
                 <LinearLayout
