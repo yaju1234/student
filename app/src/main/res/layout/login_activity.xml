@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e23744"
+    android:background="@drawable/login_bg"
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center"
@@ -34,6 +34,7 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:orientation="vertical"
             android:gravity="center">
 
@@ -44,8 +45,8 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="3dp"
-                    android:textColor="#ffffff"
-                    android:textColorHint="#ffffff"
+                    android:textColor="#3C3B3B"
+                    android:textColorHint="#706E6E"
                     android:maxLength="15"
                     android:hint="User Name"
                     android:inputType="textEmailAddress"
@@ -59,8 +60,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:drawablePadding="3dp"
-                    android:textColor="#ffffff"
-                    android:textColorHint="#ffffff"
+                    android:textColor="#3C3B3B"
+                    android:textColorHint="#706E6E"
                     android:hint="@string/password"
                     android:maxLength="10"
                     android:inputType="textPassword"
@@ -75,17 +76,17 @@
                 android:textSize="15dp"
                 android:layout_gravity="end"
                 android:text="Forgot Password"
-                android:textColor="#ffffff" />
+                android:textColor="#3C3B3B" />
 
             <Button
                 android:id="@+id/btn_loginsubmit"
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
                 android:layout_margin="10dp"
-                android:background="#ffffff"
+                android:background="#e23744"
                 android:text="Login"
                 android:textAllCaps="false"
-                android:textColor="#e23744"
+                android:textColor="#ffffff"
                 android:textSize="18sp" />
 
         </LinearLayout>
@@ -95,8 +96,9 @@
 
     <ImageView
         android:id="@+id/user_profile_photo"
-        android:layout_width="250dp"
-        android:layout_height="210dp"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="120dp"
         android:layout_centerHorizontal="true"
         android:elevation="4dp"
         android:src="@drawable/app_icon" />

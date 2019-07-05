@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MD  PARENT </string>
+    <string name="app_name">MDPS</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -46,11 +46,11 @@
     <string name="error_address2">Please enter address2.</string>
 
 
-    <string name="slide_1_title">M. D. Group of Education </string>
+    <string name="slide_1_title">M.D. PUBLIC SR. SEC. SCHOOL, RAISINGH NAGAR</string>
     <string name="slide_1_desc">The easiest way to manage school management after install app feature!</string>
 
     <string name="slide_2_title">Schools</string>
-    <string name="slide_2_desc">Schools family and friends , Paco Catholic School is a religious educational institution with office!</string>
+    <string name="slide_2_desc">Schools family and friends , M.D. PUBLIC SR. SEC. SCHOOL, RAISINGH NAGAR is a  educational institution with office!</string>
 
     <string name="slide_3_title">Great Environment </string>
     <string name="slide_3_desc">Best Environment for the students</string>

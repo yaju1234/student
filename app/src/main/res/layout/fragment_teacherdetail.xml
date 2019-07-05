@@ -53,13 +53,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="8dp"
+                            android:visibility="gone"
                             android:text="Detail About Teacher"
                             android:textColor="@color/msg_line"
                             android:textSize="18sp" />
 
                         <View
                             android:layout_width="match_parent"
-                            android:layout_height="1dp"
+                            android:layout_height="0dp"
                             android:layout_marginTop="5dp"
                             android:background="@color/dot_dark_screen1" />
 
@@ -79,18 +80,21 @@
                                 android:id="@+id/teacher_name"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
+                                android:layout_marginLeft="50dp"
                                 android:layout_marginTop="5dp"
-                                android:layout_toRightOf="@id/phone5"
+
+                                android:layout_below="@id/teacher_name1"
                                 android:text="Pramila mathur"
                                 android:textColor="#000"
                                 android:textSize="16sp" />
 
                             <TextView
+                                android:id="@+id/teacher_name1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@id/teacher_name"
-                                android:layout_marginLeft="50dp"
+
+                                android:layout_toRightOf="@id/phone5"
+                                android:layout_marginLeft="20dp"
                                 android:layout_marginTop="5dp"
                                 android:text="Name"
                                 android:textColor="@color/dot_light_screen1"
@@ -110,8 +114,8 @@
 
                             <ImageView
                                 android:id="@+id/phone1"
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
                                 android:layout_marginTop="10dp"
                                 android:src="@drawable/qualification" />
 
@@ -119,18 +123,22 @@
                                 android:id="@+id/teacher_qualification"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
+                                android:layout_marginLeft="50dp"
                                 android:layout_marginTop="5dp"
-                                android:layout_toRightOf="@id/phone1"
+                                android:layout_below="@id/teacher_qualification1"
                                 android:text="BA,MA,B.ED"
                                 android:textColor="#000"
                                 android:textSize="16sp" />
 
                             <TextView
+                                android:id="@+id/teacher_qualification1"
+                                android:layout_toRightOf="@id/phone1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@id/teacher_qualification"
-                                android:layout_marginLeft="50dp"
+
+
+
+                                android:layout_marginLeft="20dp"
                                 android:layout_marginTop="5dp"
                                 android:text="Qualification"
                                 android:textColor="@color/dot_light_screen1"
@@ -159,18 +167,20 @@
                                 android:id="@+id/teacher_email"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
+                                android:layout_marginLeft="50dp"
                                 android:layout_marginTop="5dp"
-                                android:layout_toRightOf="@id/phone2"
+
                                 android:text="Sogani.jain@gmail.com"
                                 android:textColor="#000"
+                                android:layout_below="@id/teacher_email1"
                                 android:textSize="16sp" />
 
                             <TextView
+                                android:id="@+id/teacher_email1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@id/teacher_email"
-                                android:layout_marginLeft="50dp"
+                                android:layout_toRightOf="@id/phone2"
+                                android:layout_marginLeft="20dp"
                                 android:layout_marginTop="5dp"
                                 android:text="Email"
                                 android:textColor="@color/dot_light_screen1"
@@ -199,19 +209,21 @@
                                 android:id="@+id/teacher_experience"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
+                                android:layout_marginLeft="50dp"
                                 android:layout_marginTop="5dp"
-                                android:layout_toRightOf="@id/phone6"
+                                android:layout_below="@id/teacher_experience1"
                                 android:text="5 years"
                                 android:textColor="#000"
                                 android:textSize="16sp" />
 
                             <TextView
+                                android:id="@+id/teacher_experience1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@id/teacher_experience"
-                                android:layout_marginLeft="50dp"
+
+                                android:layout_marginLeft="20dp"
                                 android:layout_marginTop="5dp"
+                                android:layout_toRightOf="@id/phone6"
                                 android:text="Experience"
                                 android:textColor="@color/dot_light_screen1"
                                 android:textSize="14sp" />
@@ -239,20 +251,22 @@
                                 android:id="@+id/teacher_address"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
+                                android:layout_marginLeft="50dp"
                                 android:layout_marginTop="5dp"
-                                android:layout_toRightOf="@id/phone4"
+                                android:layout_below="@id/teacher_address1"
                                 android:text="Mansarover"
                                 android:textColor="#000"
                                 android:textSize="16sp" />
 
                             <TextView
+                                android:id="@+id/teacher_address1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@id/teacher_address"
-                                android:layout_marginLeft="50dp"
+
+                                android:layout_marginLeft="20dp"
                                 android:layout_marginTop="5dp"
                                 android:text="Address"
+                                android:layout_toRightOf="@id/phone4"
                                 android:textColor="@color/dot_light_screen1"
                                 android:textSize="14sp" />
                         </RelativeLayout>

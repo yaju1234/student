@@ -53,11 +53,11 @@ public class StudentChat extends Activity {
         super.onCreate(savedInstanceState);
         Intent i = getIntent();
         setContentView(R.layout.activity_chat);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+       /* if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.setStatusBarColor(Color.parseColor("#1a458c"));
-        }
+        }*/
 
         prefManager = new PrefManager(StudentChat.this);
         buttonSend = (Button) findViewById(R.id.buttonSend);

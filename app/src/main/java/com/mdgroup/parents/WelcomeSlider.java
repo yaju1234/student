@@ -133,7 +133,8 @@ public class WelcomeSlider extends AppCompatActivity {
         user_id=prefManager.getCheckUser_id();
 
 
-        if (!prefManager.isFirstTimeLaunch()) {
+      /*  if (!prefManager.isFirstTimeLaunch()) {*/
+        if (true) {
             launchHomeScreen();
             finish();
         }

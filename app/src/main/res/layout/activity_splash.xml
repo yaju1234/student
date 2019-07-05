@@ -22,7 +22,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-light"
         android:gravity="center_horizontal"
-        android:text="M. D. GROUP OF EDUCATION "
+        android:text="M.D. PUBLIC SR. SEC. SCHOOL"
         android:textColor="#ffffff"
         android:textSize="22sp"
         android:textStyle="bold" />
@@ -35,7 +35,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-light"
         android:gravity="center_horizontal"
-        android:text="RAISIGNNAGAR"
+        android:text="RAISINGH NAGAR"
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:textStyle="bold" />
